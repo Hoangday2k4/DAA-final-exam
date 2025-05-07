@@ -1,0 +1,3 @@
+Succes Count : 3
+Average Time : 2
+Average Length : 34

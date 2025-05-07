@@ -1,0 +1,92 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{stern2019multi}
+R.~Stern, N.~Sturtevant, A.~Felner, S.~Koenig, H.~Ma, T.~Walker, J.~Li, D.~Atzmon, L.~Cohen, T.~Kumar, \emph{et~al.}, ``Multi-agent pathfinding: Definitions, variants, and benchmarks,'' in \emph{Proceedings of the International Symposium on Combinatorial Search}, vol.~10, no.~1, 2019, pp. 151--158.
+
+\bibitem{ma2019lifelong}
+H.~Ma, W.~H{\"o}nig, T.~S. Kumar, N.~Ayanian, and S.~Koenig, ``Lifelong path planning with kinematic constraints for multi-agent pickup and delivery,'' in \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~33, no.~01, 2019, pp. 7651--7658.
+
+\bibitem{honig2018trajectory}
+W.~H{\"o}nig, J.~A. Preiss, T.~S. Kumar, G.~S. Sukhatme, and N.~Ayanian, ``Trajectory planning for quadrotor swarms,'' \emph{IEEE Transactions on Robotics}, vol.~34, no.~4, pp. 856--869, 2018.
+
+\bibitem{ma2021distributed}
+Z.~Ma, Y.~Luo, and H.~Ma, ``Distributed heuristic multi-agent path finding with communication,'' in \emph{2021 IEEE International Conference on Robotics and Automation (ICRA)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2021, pp. 8699--8705.
+
+\bibitem{lafmejani2021nonlinear}
+A.~S. Lafmejani and S.~Berman, ``Nonlinear mpc for collision-free and deadlock-free navigation of multiple nonholonomic mobile robots,'' \emph{Robotics and Autonomous Systems}, vol. 141, p. 103774, 2021.
+
+\bibitem{park2023dlsc}
+J.~Park, Y.~Lee, I.~Jang, and H.~J. Kim, ``Dlsc: Distributed multi-agent trajectory planning in maze-like dynamic environments using linear safe corridor,'' \emph{IEEE Transactions on Robotics}, vol.~39, no.~5, pp. 3739--3758, 2023.
+
+\bibitem{Multi_agent_Niklas}
+N.~Dahlquist, B.~Lindqvist, A.~Saradagi, and G.~Nikolakopoulos, ``Reactive multi-agent coordination using auction-based task allocation and behavior trees,'' in \emph{2023 IEEE Conference on Control Technology and Applications (CCTA)}, 2023, pp. 829--834.
+
+\bibitem{standley2010finding}
+T.~Standley, ``Finding optimal solutions to cooperative pathfinding problems,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~24, no.~1, 2010, pp. 173--178.
+
+\bibitem{yu2015optimal}
+J.~Yu and S.~M. LaValle, ``Optimal multi-robot path planning on graphs: Structure and computational complexity,'' \emph{arXiv preprint arXiv:1507.03289}, 2015.
+
+\bibitem{ma2019searching}
+H.~Ma, D.~Harabor, P.~J. Stuckey, J.~Li, and S.~Koenig, ``Searching with consistent prioritization for multi-agent path finding,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~33, no.~01, 2019, pp. 7643--7650.
+
+\bibitem{wagner2015subdimensional}
+G.~Wagner and H.~Choset, ``Subdimensional expansion for multirobot path planning,'' \emph{Artificial intelligence}, vol. 219, pp. 1--24, 2015.
+
+\bibitem{sharon2015conflict}
+G.~Sharon, R.~Stern, A.~Felner, and N.~R. Sturtevant, ``Conflict-based search for optimal multi-agent pathfinding,'' \emph{Artificial intelligence}, vol. 219, pp. 40--66, 2015.
+
+\bibitem{boyarski2015icbs}
+E.~Boyarski, A.~Felner, R.~Stern, G.~Sharon, O.~Betzalel, D.~Tolpin, and E.~Shimony, ``Icbs: The improved conflict-based search algorithm for multi-agent pathfinding,'' in \emph{Proceedings of the International Symposium on Combinatorial Search}, vol.~6, no.~1, 2015, pp. 223--225.
+
+\bibitem{gange2019lazy}
+G.~Gange, D.~Harabor, and P.~J. Stuckey, ``Lazy cbs: implicit conflict-based search using lazy clause generation,'' in \emph{Proceedings of the international conference on automated planning and scheduling}, vol.~29, 2019, pp. 155--162.
+
+\bibitem{via2020efficient}
+N.-h. M.~R. via Prioritized, ``Efficient trajectory planning for multiple non-holonomic mobile robots via prioritized trajectory optimization,'' 2020.
+
+\bibitem{tajbakhsh2024conflict}
+A.~Tajbakhsh, L.~T. Biegler, and A.~M. Johnson, ``Conflict-based model predictive control for scalable multi-robot motion planning,'' in \emph{2024 IEEE International Conference on Robotics and Automation (ICRA)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2024, pp. 14\,562--14\,568.
+
+\bibitem{mcbeth2023scalable}
+C.~McBeth, J.~Motes, D.~Uwacu, M.~Morales, and N.~M. Amato, ``Scalable multi-robot motion planning for congested environments with topological guidance,'' \emph{IEEE Robotics and Automation Letters}, 2023.
+
+\bibitem{li2019symmetry}
+J.~Li, D.~Harabor, P.~J. Stuckey, H.~Ma, and S.~Koenig, ``Symmetry-breaking constraints for grid-based multi-agent path finding,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~33, no.~01, 2019, pp. 6087--6095.
+
+\bibitem{li2021pairwise}
+J.~Li, D.~Harabor, P.~J. Stuckey, H.~Ma, G.~Gange, and S.~Koenig, ``Pairwise symmetry reasoning for multi-agent path finding search,'' \emph{Artificial Intelligence}, vol. 301, p. 103574, 2021.
+
+\bibitem{Remolina2004}
+E.~Remolina and B.~Kuipers, ``{Towards a general theory of topological maps},'' vol. 152, no.~1, pp. 47--104.
+
+\bibitem{Kostavelis2015}
+I.~Kostavelis and A.~Gasteratos, ``{Semantic mapping for mobile robotics tasks: A survey},'' vol.~66, pp. 86--103.
+
+\bibitem{FREDRIKSSON_SEMANTIC_MAPPING}
+S.~Fredriksson, A.~Saradagi, and G.~Nikolakopoulos, ``Semantic and topological mapping using intersection identification,'' \emph{IFAC-PapersOnLine}, vol.~56, no.~2, pp. 9251--9256, 2023, 22nd IFAC World Congress.
+
+\bibitem{barer2014suboptimal}
+M.~Barer, G.~Sharon, R.~Stern, and A.~Felner, ``Suboptimal variants of the conflict-based search algorithm for the multi-agent pathfinding problem,'' in \emph{Proceedings of the international symposium on combinatorial Search}, vol.~5, no.~1, 2014, pp. 19--27.
+
+\bibitem{Hector2011}
+S.~Kohlbrecher, J.~Meyer, O.~von Stryk, and U.~Klingauf, ``A flexible and scalable slam system with full 3d motion estimation,'' in \emph{Proc. IEEE International Symposium on Safety, Security and Rescue Robotics (SSRR)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, November 2011.
+
+\end{thebibliography}

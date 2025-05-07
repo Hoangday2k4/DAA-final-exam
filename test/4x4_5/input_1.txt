@@ -1,0 +1,10 @@
+Graph
+GridGraph 4 4
+Obstacles
+7 8 11 
+Agents
+10 1
+2 5
+6 15
+0 10
+9 2

@@ -1,0 +1,27 @@
+
+ -   X   -   -  
+ -   -   X   -  
+ X   0   X   -  
+ -   0 0   0   -  
+
+
+
+ -   X   -   -  
+ -   -   X   -  
+ X   -   X   1  
+ -   1   1   1  
+
+
+0: 9 13 13 14 
+1: 11 15 14 13 
+
+Expanded Node count : 1
+Low level Search count : 2
+Total path cost : 8
+Biggest path cost : 4
+Validate cost : 2
+Find Node cost : 0
+Push Node cost : 0
+Main Body cost : 1
+
+time consumed : 0
