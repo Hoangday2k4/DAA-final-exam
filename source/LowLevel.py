@@ -92,7 +92,7 @@ class LowLevelCBS:
             path.append(node)
             node = node.Parent
         return list(reversed(path))
-    
+    '''
     @staticmethod
     def has_conflict(vertex: Vertex, time: int, constraints: list[Constraint]) -> bool:
         return any(c.TimeStep == time and c.Vertex == vertex for c in constraints)
@@ -103,13 +103,17 @@ class LowLevelCBS:
         # Kiểm tra xung đột vị trí
         if any(c.TimeStep == time and c.Vertex == vertex for c in constraints):
             return True
-        
-        # Kiểm tra xung đột cạnh
+
+        # Kiểm tra xung đột cạnh bằng cách theo dõi di chuyển hai chiều
         for constraint in constraints:
-            if constraint.TimeStep == time - 1:  # Xung đột cạnh xảy ra ngay trước bước hiện tại
+            if constraint.TimeStep == time - 1:
                 prev_vertex = constraint.Vertex
-                if prev_vertex == vertex.Parent and constraint.Agent == vertex.Parent.Parent:
-                    return True
-        
+                if prev_vertex and vertex:
+                    if (prev_vertex.x == vertex.x and prev_vertex.y == vertex.y) or \
+                    (prev_vertex.x == vertex.y and prev_vertex.y == vertex.x) or \
+                    (prev_vertex.x == vertex.x and prev_vertex.y == vertex.y and 
+                    constraint.Agent != vertex.Agent):  # Kiểm tra cùng di chuyển trên cùng cạnh
+                        return True
+
         return False
-    '''
+    #'''

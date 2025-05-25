@@ -1,0 +1,15 @@
+Run time (ms)
+0 2.93
+1 N
+2 2.01
+3 N
+4 3.19
+5 L
+6 N
+7 0.00
+8 7.60
+9 0.00
+
+Average time: 2.62
+No solution: 3
+Running time too long: 1

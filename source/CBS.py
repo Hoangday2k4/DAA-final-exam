@@ -34,15 +34,19 @@ class HighLevelCBS(HighLevelCBS):
 
                     b = min(len(solution[k].Nodes) - 1, i)
 
-                    if solution[j].Nodes[a] == solution[k].Nodes[b]:
+                    if solution[j].Nodes[a] == solution[k].Nodes[b]:  # Xung đột vị trí
                         node.add_conflict(Conflict(
                             self._agents[solution[j].agentIndex],
                             self._agents[solution[k].agentIndex],
                             solution[j].Nodes[a],
                             i
                         ))
+
+                        # Thêm ràng buộc để ngăn chặn tái diễn xung đột
+                        #node.add_constraints(node.get_constraints(), Constraint(self._agents[solution[j].agentIndex], solution[j].Nodes[a], i))
+                        #node.add_constraints(node.get_constraints(), Constraint(self._agents[solution[k].agentIndex], solution[k].Nodes[b], i))
+
                         valid_solution = False
-                        return valid_solution
 
         return valid_solution
 
@@ -68,6 +72,8 @@ class HighLevelCBS(HighLevelCBS):
             self._agents[agent_index].path.agentIndex = agent_index
             node.set_solution_for_agent(self._agents[agent_index])
             return True
+        
+        print(f"Agent {agent_index} không thể tìm được đường đi hợp lệ sau khi cập nhật ràng buộc!")
         return False
     
     '''
@@ -91,6 +97,7 @@ class HighLevelCBS(HighLevelCBS):
 
     def run(self) -> list[Path]:
         debug_index = 0
+        failure_count = 0  # Đếm số lần thất bại
 
         root = CTNode()
         root.debugIndex = debug_index
@@ -102,8 +109,8 @@ class HighLevelCBS(HighLevelCBS):
 
         while self._open:
             P = self.retrieve_and_pop_node_with_lowest_cost()
-            if P is None:  # Nếu không có nút nào để xử lý
-                print("Không có nút khả dụng để tiếp tục!")
+            if P is None or failure_count > 10:  # Nếu thất bại quá nhiều lần, dừng chương trình
+                print("Không có nút khả dụng để tiếp tục hoặc quá nhiều lần thất bại!")
                 break
 
             self.print_solution(P)
@@ -114,6 +121,10 @@ class HighLevelCBS(HighLevelCBS):
                 return P.get_solution()
 
             conflict = P.get_first_conflict()
+            
+            if conflict is None:  # Nếu không có xung đột để xử lý, bỏ qua nút này
+                failure_count += 1
+                continue
 
             for i in range(2):
                 new_ct_node = CTNode()

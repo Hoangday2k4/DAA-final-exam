@@ -5,6 +5,5 @@ Obstacles
 Agents
 11 6
 6 9
-5 0
 10 4
 8 5
